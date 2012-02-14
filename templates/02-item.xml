@@ -1,0 +1,8 @@
+<item>
+	<title>{{title}}</title>
+	<link>{{link}}</link>
+	<description>{{description}}</description>
+	<pubDate>{{pubdate}}</pubDate>
+	<guid>{{guid}}</guid>
+</item>
+	

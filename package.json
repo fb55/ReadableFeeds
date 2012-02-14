@@ -1,0 +1,15 @@
+{
+    "name": "ReadableFeeds",
+    "version": "0.0.2",
+    "description": "runs readabilitySAX on feeds",
+    "author": "Felix Boehm <me@feedic.com>",
+    "main": "lib/index.js",
+    "engine": "node >= 0.4.0",
+    "dependencies": {
+        "htmlparser2": "2.x.x",
+        "readabilitySAX": "1.x.x",
+        "SimpleQueue": "0.x.x",
+        "minreq": "0.x.x",
+        "mote": "0.x.x"
+    }
+}
