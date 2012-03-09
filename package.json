@@ -1,6 +1,6 @@
 {
     "name": "ReadableFeeds",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "runs readabilitySAX on feeds",
     "author": "Felix Boehm <me@feedic.com>",
     "main": "lib/index.js",
