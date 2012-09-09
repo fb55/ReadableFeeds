@@ -1,33 +1,25 @@
 <!doctype html>
 <html>
 <head>
-<title>ReadableFeeds 0.0.3</title>
-<style>
-html { background-color: #468; }
-body {
-	background-color: #feed1c;
-	padding: 1em;
-	border-radius: 1em;
-	width: 29em;
-	margin: 10em auto;
-}
-input[type=submit]{ margin: 1em auto; }
-</style>
-</head><body>
-<h1>ReadableFeeds 0.0.3</h1>
-<form method="GET" action="feed">
-	<label for="url">URL of the wanted feed:</label>
-	<input type="url" name="url" placeholder="http://domain.tld/path"/>
-	<br/>
-	<label for="item_num">Number of items to receive:</label>
-	<input type="number" name="item_num" value="5"/>
-	<br/>
-	<label for="replace_title">Replace item title:</label>
-	<input type="checkbox" name="replace_title"/>
-	<br/>
-	<label for="append_result">Append (don't replace) the content:</label>
-	<input type="checkbox" name="append_result"/>
-	<br/>
-	<input type="submit" value="GO!"/>
-</form>
+<title>ReadableFeeds 0.0.4</title>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap.min.css" rel="stylesheet">
+</head><body class="container">
+<div class="hero-unit">
+	<div class="page-header">
+		<h1>ReadableFeeds <small>0.0.4</small></h1>
+	</div>
+	<form method="GET" action="feed">
+		<label for="url">The feed&apos;s URL:</label>
+		<input type="url" name="url" placeholder="http://domain.tld/path"/>
+		<label for="item_num">Number of items to receive:</label>
+		<input type="number" name="item_num" value="5"/>
+		<label class="checkbox">
+			<input type="checkbox" name="replace_title"/> Replace item title
+		</label>
+		<label class="checkbox">
+			<input type="checkbox" name="append_result"/> Append (don&apos;t replace) the content
+		</label>
+		<button type="submit" class="btn btn-primary">go <i class="icon-arrow-right"></i></button>
+	</form>
+</div>
 </body></html>
