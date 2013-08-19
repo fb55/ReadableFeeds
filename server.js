@@ -5,7 +5,7 @@ var procFeedReq = require("./"),
 
 require("http").createServer(function(req, resp){
 	var link = url.parse(req.url, true);
-	if(link.pathname === "/feed") procFeedReq(link.query, resp);
+	if(link.pathname.substr(0, 5) === "/feed") procFeedReq(link.query, resp);
 	else if(link.pathname === "/"){
 		resp.writeHead(200, { "Content-Type": "text/html" });
 		resp.end(indexPage);
